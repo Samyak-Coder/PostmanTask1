@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+   font-family: Circular,Helvetica,sans-serif;;
+  background-color: #fff;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.carousel-section {
+  padding: 40px 20px;
+}
+
+.carousel-section h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta-button {
+  background-color: #4a60f6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #3a48c6;
+}
+
+.carousel-container {
+  margin-top: 30px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.track2{
+  margin-top: 40px;
+  animation: scroll 20s linear infinite;
+}
+
+.track2 img{
+  height: 25px;
+}
+
+.track3{
+  margin-top: 40px;
+  animation: scroll 50s linear infinite;
+}
+.track3 img{
+  height: 30px;
+}
+
+.carousel-track img {
+  max-height: 40px;
+  margin: 0 40px;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.1);
+  filter: none;
+  opacity: 1;
+}
+
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #5850ec;
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 0 8px rgb(136 132 255 / 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #3f3bd6;
+}
+
+.subtext {
+  font-size: 0.8rem;
+  color: #3b376b;
+}
+
+
+
+
+footer {
+    /* background-color: #f0f4ff; Light blue background */
+    /* padding: 60px 20px; */
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    background-color: #f0f1ff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    margin: 0 ;
+    margin-bottom: 20px
+}
+
+.footer-column {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    margin: 20px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
