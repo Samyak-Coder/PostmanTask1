@@ -3,6 +3,8 @@ const cards = document.querySelectorAll(".card");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
 let index = 1; 
 let stepWidth;
 
@@ -25,14 +27,20 @@ function updateStepWidth() {
   }
 }
 
-// go to slide
+
 function goToSlide(index, animate = true) {
   if (animate) {
     track.style.transition = "transform 0.5s ease-in-out";
   } else {
     track.style.transition = "none";
   }
-  track.style.transform = `translateX(${-stepWidth * index}px)`;
+  if (mediaQuery.matches){
+    track.style.transform = `translateX(${(-stepWidth * index)}px)`;
+    console.log('fuck')
+  } else{
+    track.style.transform = `translateX(${(-stepWidth * index)+200}px)`;
+  }
+  
 }
 
 
