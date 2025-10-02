@@ -1,2 +1,2 @@
 # PostmanTask1
-Task 1 for PostmanxBITS reqruitments
+Task 1 for PostmanxBITS Frontend reqruitments
